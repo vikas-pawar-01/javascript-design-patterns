@@ -48,17 +48,17 @@
     - Intermediate representations can pile up: use caching and other optimizations
 
 # Chapter 7
-- Facede
+- Facade
     - 
 
-# Chapter
+# Chapter 8
+-
+    - 
+
+# Chapter 9
 -
     -
 
-# Chapter
--
-    -
-
-# Chapter
+# Chapter 10
 -
     -
