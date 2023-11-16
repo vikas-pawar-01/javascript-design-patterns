@@ -1,4 +1,4 @@
-# Chapter 1
+# Chapter 1: SOLID Principles
 
 ## Single Resoponsibility Principle
 
@@ -49,13 +49,12 @@
 - Monostate: many instances, shared data
 - Directly depending on the singleton is bad idea; introduce a dependency instead
 
-# Chapter 6
+# Chapter 6: Adapter
 
-- Adapter
-  - Implement an Adapter is easy
-  - Determine the API you have and API you need
-  - Create a component which aggregates (has reference to,..) hte adaptee
-  - Intermediate representations can pile up: use caching and other optimizations
+- Implement an Adapter is easy
+- Determine the API you have and API you need
+- Create a component which aggregates (has reference to,..) hte adaptee
+- Intermediate representations can pile up: use caching and other optimizations
 
 # Chapter 7: Facade
 
@@ -85,4 +84,37 @@
 - A proxy has the same interface as the underlying object
 - To create a proxy, simply replicate the existing interface of an object
 - Add relevent functionality to the redefined member fucntions
-- Different proxies (communication, loggin, caching, etc) have completely different behaviors
+- Different proxies (communication, logging, caching, etc) have completely different behaviors
+
+# Chapter 11: Iterator
+
+- An object that facilitates the traversal of a data structure
+- An iterator specified how you can traverse an object
+- Stateful iterators cannot be recursive
+- yield allows for much more succinct iteration
+
+# Chapter 12: Observer
+
+- An observer is an object that wishes to be informed about events happening in the system. The entity generating the events is an observable.
+- Observer is an intrusive approach: an observable must provide an event to subscribe to
+- Subscription and unsubscription handled with addition / removal of items in a list
+- Property notifications are easy. Dependent property notifications are tricky.
+
+# Chapter 13: Strategy
+
+- Enables the exact nehavior of a system to be selected at run-time
+- Define an algorithm at a high level
+- Define the interfae you expect each strategy to follow
+- Provide for dynamic composition of strategies in the resulting object
+
+# Chapter 14: Template Method
+
+- Allows us to define the skeleton of the algorithm, with concrete implementations defiend in subclasses.
+- Inherit the algorithm class, providing necessary overrides
+
+# Chapter 15: Visitor
+
+- A component (visitor) that knows how to traverse a data structure composed of (possibly related) types
+- Propagate an accept (Visitor v) method throughout the entire hierarchy
+- Create a visitor with visitFoo(Foo), visitBar(Bar),.. for each element in the hierarchy
+- Each accept() simply calls visitor.visitXxx(this))
